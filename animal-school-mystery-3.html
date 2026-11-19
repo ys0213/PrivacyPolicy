@@ -47,36 +47,38 @@
 </ul>
 <p>These files are stored in the app's device storage. The developer does not operate a game-account server or a separate remote database for these game saves.</p>
 
-<h2>2. Current status of advertising and purchases</h2>
-<p class="note"><strong>At the time of this policy:</strong> Rewarded advertising and developer-support purchases are <strong>not active</strong> in this game's current implementation. The game may show menu entries or buttons for these planned features, but those entries do not currently provide an advertising-consent manager or process a payment.</p>
-<p>The game's local save format reserves fields for rewarded-ad request identifiers and records of completed purchases, including SHA-256 hashes derived from purchase tokens. Those fields support prevention of duplicate rewards if the relevant features are implemented later. Their existence does not mean that an advertisement was served or a purchase was made.</p>
-<p>If a future release enables rewarded advertising, Google Play purchases, or an associated consent-management service, this policy will be updated to describe the services actually included and the information they process <strong>before those features are released</strong>.</p>
+<h2>2. Optional rewarded advertising</h2>
+<p class="note"><strong>Optional feature:</strong> This version of <em>Animal School Mystery 3</em> integrates the <strong>Unity LevelPlay (Ads Mediation) SDK</strong> for optional rewarded advertisements. The app does not require you to watch ads to play the main story. Ad availability depends on network configuration, consent choices, your device, and whether a provider has an ad available.</p>
+<p>When you allow rewarded ads, Unity/ironSource and participating ad networks may collect, use or share information such as device identifiers and advertising identifiers, approximate country or location, app and device information, ad interaction or other app-activity data, and diagnostics. Purposes may include delivering and measuring ads, analytics, fraud prevention, and security. The participating networks and the information they process depend on the ad network configuration and the ads actually delivered. Installing an adapter does not establish that a specific network served an ad.</p>
+<p>Provider notices: <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>, <a href="https://docs.unity.com/en-us/grow/is-ads/legal-resources/google-data-safety-questionnaire">ironSource Ads Google Data Safety Questionnaire</a>, and <a href="https://docs.unity.com/en-us/grow/ads/privacy/google-data-safety">Unity Ads Google Play Data Safety</a>.</p>
+<p>If a rewarded video is displayed and the advertising SDK confirms its earned reward, the game adds <strong>one Detective Key</strong> to your locally stored Key balance. Allowing ads, tapping the ad button, loading an ad, or closing a video without earning a reward does not award a Key. The game keeps local reward-request identifiers to prevent repeated grants for the same request.</p>
+<h2>3. Optional purchases</h2>
+<p>Developer-support payments and Google Play in-app purchases are <strong>not active</strong> in this version. Any menu entry referring to support is informational only. No purchase occurs through that entry. If payments are activated in a later release, this policy must be updated before that release.</p>
+<h2>4. Third-party platform services</h2>
+<p>Android, Google Play, the Unity game engine and the included LevelPlay advertising service may handle technical information as part of app installation, operation, and optional ad delivery, subject to their notices and the services enabled in the release. The developer does not upload locally saved story progress or clue records to a developer-operated server.</p>
+<p>For details about the platform providers, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>. Those provider policies describe their broader practices; not every feature described in them is necessarily enabled in this game.</p>
 
-<h2>3. Third-party platform services</h2>
-<p>Android, Google Play, and the Unity game engine may handle technical information as part of app installation, operation, and platform services, subject to the services and settings in the particular release. The developer does not upload locally saved story progress or clue records to a developer-operated server.</p>
-<p>For details about the platform providers, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>. These links do not mean every product or optional advertising feature described in those policies is enabled in this game.</p>
+<h2>5. How locally stored information is used</h2>
+<p>Local game data is used to resume the story, display the casebook and clues, remember unlocked content and Detective Keys, save ad preferences and reward records, and preserve settings. The game does not require you to submit these records to the developer.</p>
 
-<h2>4. How locally stored information is used</h2>
-<p>Local game data is used to resume the story, display the casebook and clues, remember unlocked content and Detective Keys, and preserve settings. The game does not require you to submit these records to the developer.</p>
-
-<h2>5. Advertising and purchase choices</h2>
-<p>There is no active rewarded-ad consent interface or in-game purchase checkout in the version described here. You can play the main story without watching advertisements or buying Detective Keys. You may review applicable device and Google Play privacy controls through your device settings.</p>
-<p>If advertising or purchases are added in a later version, relevant consent or privacy-choice controls, third-party notices, purchase terms, and this policy will need to be updated. A future rewarded advertisement should only grant a Detective Key after its reward is verified; an uncompleted ad or consent selection alone is not a reward.</p>
-
-<h2>6. Retention, reset, and deletion</h2>
+<h2>6. Advertising choices and privacy requests</h2>
+<p>You can decide whether to enable optional rewarded ads in the game through <strong>Menu &gt; Settings &gt; Ad settings</strong>. This local choice is saved on your device and passed to the supported LevelPlay consent API. Declining or turning off rewarded ads does not stop the main story or remove previously earned Detective Keys or unlocked Extra Stories.</p>
+<p>Turning off ads stops the game from requesting new rewarded ads through the integrated ad feature. It does not erase information already processed by a third-party provider, and changes may not affect an advertisement already in progress. The in-game preference is not a replacement for any additional legally required regional consent-management or provider-specific privacy controls.</p>
+<p>If you have questions or wish to exercise applicable privacy rights, contact <a href="mailto:minimaldev.contact@gmail.com">minimaldev.contact@gmail.com</a>. Ad providers may offer separate controls and data-request processes in their own notices. Advertising preferences do not control Google Play's platform-level data handling.</p>
+<h2>7. Retention, reset, and deletion</h2>
 <p>Local game progress and settings generally remain on the device until removed by an available in-game operation, clearing the app's data, or uninstalling the app, subject to Android backup and restore behavior.</p>
-<p><strong>Resetting story progress inside the game is not the same as deleting all app data.</strong> In-game story reset preserves separately stored Detective Keys, Extra Story and hint unlocks, and settings. To remove locally stored game data more completely, use your Android device's app-storage controls. Data already processed by platform providers, if any, is subject to their own retention and deletion processes.</p>
+<p><strong>Resetting story progress inside the game is not the same as deleting all app data.</strong> In-game story reset preserves separately stored Detective Keys, Extra Story and hint unlocks, and settings. To remove locally stored game data more completely, use your Android device's app-storage controls. Data processed by advertising and platform providers is subject to their own retention and deletion processes.</p>
 
-<h2>7. Security and international processing</h2>
-<p>The game does not send its local save files to a developer-operated cloud server. Platform providers may process information in countries other than your own according to their respective notices and safeguards. This policy does not guarantee any particular security or backup outcome.</p>
+<h2>8. Security and international processing</h2>
+<p>The game does not send its local save files to a developer-operated cloud server. Advertising and platform providers may process information in countries other than your own according to their respective notices and safeguards. This policy does not guarantee any particular security or backup outcome.</p>
 
-<h2>8. Children and families</h2>
-<p>The game does not request a player's age, name, or contact information. Parents and guardians who have privacy-related questions may use the contact address below. Any advertising or purchase functionality introduced for a future release must be assessed against that release's Google Play target-audience declarations and applicable children's privacy requirements.</p>
+<h2>9. Children and families</h2>
+<p>The game does not request a player's age, name, or contact information. Parents and guardians who have privacy-related questions may use the contact address below. The intended age group and applicable advertising safeguards must be checked against the actual Google Play target-audience declarations and child-protection requirements before release. Parents or guardians may contact us about privacy concerns.</p>
 
-<h2>9. Changes and contact</h2>
+<h2>10. Changes and contact</h2>
 <p>This policy may change if the game's features, third-party services, or applicable legal requirements change. The date above will be updated when a revised policy is published.</p>
 <p>For privacy inquiries, contact <a href="mailto:minimaldev.contact@gmail.com">minimaldev.contact@gmail.com</a>.</p>
-<small>This policy applies to Animal School Mystery 3 — After-School Escape on Android only. It reflects the game's currently implemented features, and must be reviewed if advertising, purchases, or additional network services are enabled.</small>
+<small>This policy applies to Animal School Mystery 3 — After-School Escape on Android only. It describes the proposed optional LevelPlay rewarded-ad release. Actual SDK adapters and consent management must be verified before publishing the app; purchases are not yet implemented.</small>
 </article>
 </main>
 </body>
